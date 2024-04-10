@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTE BROWN SUGAR */
+@font-face {
+    font-family: "Brown Sugar";
+    src: url(/pages/fonts/Brown-Sugar.ttf);
+}
+
+.font-defined {
+    font-family: "Brown Sugar";
+}
+
+/* HEADER */
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px 0px 25px 0px
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style-type: none;
+}
+
+.a-header-list {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px 20px 8px 20px;
+    transition: 0.3s;
+}
+.a-header-list:hover {
+    color: rgb(136, 136, 136);
+}
+
+/* Section Main */
+
+#main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    height: 91vh;
+}
+
+#main-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+#main-section div p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#main-section div h1 {
+    font-size: 150px;
+    font-weight: bolder;
+}
+
+#main-section div button {
+    padding: 7px 40px 7px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: transparent;
+    border: 1px rgb(19, 19, 19) solid;
+    color: rgb(19, 19, 19);
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: 50px;
+}
+#main-section div button:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+
+/* About me SECTION */
+
+#about_me-section {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+#about_me-section img{
+    width: 600px;
+}
+
+#right_side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+#right_side div {
+    width: 75px;
+    height: 3px;
+    background-color: black;
+    border-radius: 120px;
+}
+
+#title-about_me {
+    font-family: "Brown Sugar";
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#text-about_me{
+    width: 400px;
+}
