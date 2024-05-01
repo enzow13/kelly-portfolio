@@ -23,17 +23,33 @@
             <div>
                 <p>welcome to my first</p>
                 <h1>portfolio</h1>
-                <button>Start</button>
+                <button id="btn_start" onclick="goToAboutMeSection()">Start</button>
             </div>
         </section>
         <section id="about_me-section">
-            <img src="" alt="My photo from IG">
-            <div id="right_side">
-                <p id="title-about_me">About me</p>
-                <div></div>
-                <p id="text-about_me"></p>
+            <div id="central_div">
+                <img id="img_IG" src="/pages/mainpage/imgs/profile_pic.jpeg" alt="My photo from IG">
+                <div id="right_side">
+                    <div id="about_me_text_and_underline">
+                        <p id="title-about_me">Me chamo Kelly Gihee,</p>
+                        <div id="div_underline"></div>
+                    </div>
+
+                    <p id="text-about_me">tenho 21 anos e estou atualmente cursando Ciência da Computação, com previsão de formatura para 2025.<br><br>Sempre fui apaixonada por tecnologia e essa paixão me levou a escolher um caminho acadêmico que me 
+                        permite explorar o vasto e fascinante mundo da computação.<br><br>
+                        Minha abordagem lógica e estruturada para resolver problemas complexos é uma das minhas maiores forças. <br><br>                    
+                        Estou ansiosa para aplicar os conhecimentos e habilidades que adquiri durante meus estudos para fazer contribuições 
+                        significativas para o campo da Ciência da Computação.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
+    <script>
+        function goToAboutMeSection() {
+            let view = document.getElementById("text-about_me");
+            view.scrollIntoView()
+        }
+    </script>
 </body>
 </html>

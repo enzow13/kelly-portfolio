@@ -46,7 +46,7 @@ header nav ul{
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    height: 91vh;
+    height: 86vh;
 }
 
 #main-section div {
@@ -83,29 +83,39 @@ header nav ul{
     color: white;
 }
 
+/* IMG from IG */
+
+#img_IG {
+    height: 600px;
+    align-self: center;
+    border-radius: 15px;
+}
+
+
 /* About me SECTION */
 
 #about_me-section {
     display: flex;
     justify-content: center;
-    gap: 2.5rem;
 }
 
-#about_me-section img{
-    width: 600px;
+#central_div {
+    display: flex;
+    gap: 3rem;
 }
 
 #right_side {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 3rem;
 }
 
-#right_side div {
+#div_underline {
     width: 75px;
     height: 3px;
     background-color: black;
     border-radius: 120px;
+    margin-top: 15px;
 }
 
 #title-about_me {
@@ -115,5 +125,11 @@ header nav ul{
 }
 
 #text-about_me{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(19, 19, 19, 0.781);
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-weight: 500;
     width: 400px;
 }
