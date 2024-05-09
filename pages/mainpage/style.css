@@ -47,6 +47,7 @@ header nav ul{
     align-items: center;
     padding-top: 15px;
     height: 86vh;
+    transition: .8s ease-in-out;
 }
 
 #main-section div {
@@ -58,13 +59,13 @@ header nav ul{
 #main-section div p {
     font-size: 30px;
     font-weight: 600;
-    animation: ease-in opacity_anim 1s forwards;
+    animation: ease-in opacity_anim .8s;
 }
 
 #main-section div h1 {
     font-size: 150px;
     font-weight: bolder;
-    animation: ease-in opacity_anim 2s forwards;
+    animation: ease-in opacity_anim 1.2s;
 }
 
 #main-section div button {
@@ -78,7 +79,7 @@ header nav ul{
     font-size: 1.3rem;
     font-weight: 300;
     margin-top: 50px;
-    animation: ease-in opacity_anim 3s forwards;
+    animation: ease-in opacity_anim .8s;
 }
 #main-section div button:hover {
     background-color: rgb(19, 19, 19);
@@ -105,14 +106,17 @@ header nav ul{
     height: 600px;
     align-self: center;
     border-radius: 15px;
+    transition: .7s ease-in;
+    opacity: 0;
 }
 
 
 /* About me SECTION */
 
 #about_me-section {
-    display: flex;
+    display: none;
     justify-content: center;
+    padding-top: 75px;
 }
 
 #central_div {
@@ -132,12 +136,16 @@ header nav ul{
     background-color: black;
     border-radius: 120px;
     margin-top: 15px;
+    transition: .6s ease-in;
+    opacity: 0;
 }
 
 #title-about_me {
     font-family: "Brown Sugar";
     font-size: 40px;
     font-weight: 600;
+    transition: .6s ease-in;
+    opacity: 0;
 }
 
 #text-about_me{
@@ -148,4 +156,6 @@ header nav ul{
     line-height: 28px;
     font-weight: 500;
     width: 400px;
+    transition: .8s ease-in;
+    opacity: 0;
 }

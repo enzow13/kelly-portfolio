@@ -23,7 +23,7 @@
             <div>
                 <p>welcome to my first</p>
                 <h1>portfolio</h1>
-                <button id="btn_start" onclick="goToAboutMeSection()">Start</button>
+                <button id="btn_start" onclick="setDisplayToNone()">Start</button>
             </div>
         </section>
         <section id="about_me-section">
@@ -46,10 +46,45 @@
         </section>
     </main>
     <script>
+        function setDisplayToNone() {
+            let el = document.getElementById("main-section");
+            el.style.opacity = '0';
+            el.style.marginTop = '15px';
+            let timer = setInterval(function () {
+                el.style.display = 'none'
+                animateAbtMe();
+                clearInterval(timer)
+            }, 800);
+        }
+
+        function animateAbtMe() {
+            let el = document.getElementById("about_me-section");
+            el.style.display = 'flex';
+
+            let el_img = document.getElementById("img_IG");
+            let el_title = document.getElementById("title-about_me");
+            let el_underline = document.getElementById("div_underline");
+            let el_p = document.getElementById("text-about_me");
+            
+            let timer1 = setInterval(function () {
+                el_img.style.opacity = '1';
+            },700)
+            let timer2 = setInterval(function () {
+                el_title.style.opacity = '1';
+                el_underline.style.opacity = '1';
+            },600)
+            let timer3 = setInterval(function () {
+                el_p.style.opacity = '1';
+            },800)
+        }
+        /*
+
         function goToAboutMeSection() {
             let view = document.getElementById("text-about_me");
             view.scrollIntoView()
         }
+
+        */
     </script>
 </body>
 </html>
