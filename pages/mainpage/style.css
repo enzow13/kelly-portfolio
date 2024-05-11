@@ -27,15 +27,18 @@ header nav ul{
     list-style-type: none;
 }
 
-.a-header-list {
+.btn-header-list {
     text-decoration: none;
+    background-color: transparent;
+    border: none;
     color: rgb(19, 19, 19);
     font-size: 15px;
     font-weight: 700;
     padding: 8px 20px 8px 20px;
     transition: 0.3s;
+    cursor: pointer;
 }
-.a-header-list:hover {
+.btn-header-list:hover {
     color: rgb(136, 136, 136);
 }
 
@@ -158,4 +161,28 @@ header nav ul{
     width: 400px;
     transition: .8s ease-in;
     opacity: 0;
+}
+
+/* Projects Section */
+
+#projects-section {
+    display: flex;
+}
+
+/* Experience Section */
+
+#experience-section {
+    display: flex;
+}
+
+/* Education Section */
+
+#education-section {
+    display: flex;
+}
+
+/* Contact Section */
+
+#contact-section {
+    display: flex;
 }

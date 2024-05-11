@@ -10,11 +10,11 @@
     <header>
         <nav>
             <ul>
-                <li><a class="a-header-list" href="#">About me</a></li>
-                <li><a class="a-header-list" href="#">Projects</a></li>
-                <li><a class="a-header-list" href="#">Experience</a></li>
-                <li><a class="a-header-list" href="#">Education</a></li>
-                <li><a class="a-header-list" href="#">Contact</a></li>
+                <li><button class="btn-header-list" onclick="ChangeSection('aboutme')">About me</button></li>
+                <li><button class="btn-header-list" onclick="ChangeSection('projects')">Projects</button></li>
+                <li><button class="btn-header-list" onclick="ChangeSection('experience')">Experience</button></li>
+                <li><button class="btn-header-list" onclick="ChangeSection('education')">Education</button></li>
+                <li><button class="btn-header-list" onclick="ChangeSection('contact')">Contact</button></li>
             </ul>
         </nav>
     </header>
@@ -44,8 +44,57 @@
                 </div>
             </div>
         </section>
+        <section id="projects-section"></section>
+        <section id="experience-section"></section>
+        <section id="education-section"></section>
+        <section id="contact-section"></section>
     </main>
     <script>
+        function SetInitialDisplayToEachSection() {
+            let main_sec = document.getElementById("main-section");
+            let abtme_sec = document.getElementById("about_me-section");
+            let proj_sec = document.getElementById("projects-section");
+            let exp_sec = document.getElementById("experience-section");
+            let educ_sec = document.getElementById("education-section");
+            let ctt_sec = document.getElementById("contact-section");
+
+            main_sec.style.display = 'flex';
+            abtme_sec.style.display = 'none';
+            proj_sec.style.display = 'none';
+            exp_sec.style.display = 'none';
+            educ_sec.style.display = 'none';
+            ctt_sec.style.display = 'none';
+
+        }
+        window.onload = SetInitialDisplayToEachSection()
+
+        function ChangeSection(section) {
+            console.log(section)
+            let main_sec = document.getElementById("main-section");
+            let abtme_sec = document.getElementById("about_me-section");
+            let proj_sec = document.getElementById("projects-section");
+            let exp_sec = document.getElementById("experience-section");
+            let educ_sec = document.getElementById("education-section");
+            let ctt_sec = document.getElementById("contact-section");
+
+            let list_sections = [main_sec, abtme_sec, proj_sec, exp_sec, educ_sec, ctt_sec]
+
+            function FindSectionDisplayToChange(section_) {
+                for (let i = 0; i < (list_sections.length); i++) 
+                    if (list_sections[i].style.display != 'none') {
+                        list_sections[i].style.display = 'none'
+                        animateAbtMe()
+                    } else {
+                        console.log("ERRO")
+                    }
+                }
+
+            if (section == "aboutme") {
+                FindSectionDisplayToChange(abtme_sec)
+            }
+
+        }
+
         function setDisplayToNone() {
             let el = document.getElementById("main-section");
             el.style.opacity = '0';
