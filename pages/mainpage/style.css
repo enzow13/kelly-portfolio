@@ -110,14 +110,14 @@ header nav ul{
     align-self: center;
     border-radius: 15px;
     transition: .7s ease-in;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 
 /* About me SECTION */
 
 #about_me-section {
-    display: none;
+    display: flex;
     justify-content: center;
     padding-top: 75px;
 }
@@ -140,7 +140,7 @@ header nav ul{
     border-radius: 120px;
     margin-top: 15px;
     transition: .6s ease-in;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 #title-about_me {
@@ -148,7 +148,7 @@ header nav ul{
     font-size: 40px;
     font-weight: 600;
     transition: .6s ease-in;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 #text-about_me{
@@ -160,14 +160,82 @@ header nav ul{
     font-weight: 500;
     width: 400px;
     transition: .8s ease-in;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 /* Projects Section */
 
 #projects-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
 }
+
+#grid_main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#grid_main-div h3 {
+    font-family: "Brown Sugar";
+    font-size: 5rem;
+}
+
+#grid_parent {
+    display: grid;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(3, 250px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+
+
+.project-item-grid {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.project-item-grid:hover {
+    transform: scale(1.025);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Experience Section */
 

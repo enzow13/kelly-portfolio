@@ -44,12 +44,36 @@
                 </div>
             </div>
         </section>
-        <section id="projects-section"></section>
+        <section id="projects-section">
+            <div id="grid_main-div">
+                <h3>Projetos</h3>
+                <div id="grid_parent">
+                    <div class="project-item-grid">
+                        <div>PROJETO</div>
+                    </div>
+                    <div class="project-item-grid">
+                        <div>PROJETO</div>
+                    </div>
+                    <div class="project-item-grid">
+                        <div>PROJETO</div>
+                    </div>
+                    <div class="project-item-grid">
+                        <div>PROJETO</div>
+                    </div>
+                    <div class="project-item-grid">
+                        <div>PROJETO</div>
+                    </div>
+                    <div class="project-item-grid">
+                        <div>PROJETO</div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="experience-section"></section>
         <section id="education-section"></section>
         <section id="contact-section"></section>
     </main>
-    <script>
+    <script>/*
         function SetInitialDisplayToEachSection() {
             let main_sec = document.getElementById("main-section");
             let abtme_sec = document.getElementById("about_me-section");
@@ -108,23 +132,28 @@
 
         function animateAbtMe() {
             let el = document.getElementById("about_me-section");
-            el.style.display = 'flex';
+            if (el.style.display != 'flex') {
+                el.style.display = 'flex';
 
-            let el_img = document.getElementById("img_IG");
-            let el_title = document.getElementById("title-about_me");
-            let el_underline = document.getElementById("div_underline");
-            let el_p = document.getElementById("text-about_me");
-            
-            let timer1 = setInterval(function () {
-                el_img.style.opacity = '1';
-            },700)
-            let timer2 = setInterval(function () {
-                el_title.style.opacity = '1';
-                el_underline.style.opacity = '1';
-            },600)
-            let timer3 = setInterval(function () {
-                el_p.style.opacity = '1';
-            },800)
+                let el_img = document.getElementById("img_IG");
+                let el_title = document.getElementById("title-about_me");
+                let el_underline = document.getElementById("div_underline");
+                let el_p = document.getElementById("text-about_me");
+
+                let timer1 = setInterval(function () {
+                    el_img.style.opacity = '1';
+                },700)
+                let timer2 = setInterval(function () {
+                    el_title.style.opacity = '1';
+                    el_underline.style.opacity = '1';
+                },600)
+                let timer3 = setInterval(function () {
+                    el_p.style.opacity = '1';
+                },800)
+            } else {
+                console.log("Já está na página ABOUT ME")
+            }
+
         }
         /*
 
